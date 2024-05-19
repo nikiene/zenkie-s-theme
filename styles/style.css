@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish+Condensed:wght@300&family=Orbitron&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@800&display=swap");
+
+:root {
+  --font-display: "Mulish", sans-serif !important;
+  --font-body: "Mulish", sans-serif !important;
+  background-image: url("../assets/Main/background.jpg") !important;
+}
+
+/* Client */
+
+.app-controls-support {
+  display: none !important;
+}
+
+.rcp-fe-lol-home-error {
+  display: none !important;
+}
+
+/* Navbar */
+
+.rcp-fe-lol-navigation {
+  background-color: #000000 !important;
+  border: none !important;
+}
+
+/* left side */
+.play-button-frame {
+  display: none !important;
+  opacity: 0 !important;
+}
+
+.navigation-status-ticker,
+.ticker-button,
+.has-incidents {
+  display: none !important;
+  opacity: 0 !important;
+}
+
+.menu_item_navbar_tft {
+  opacity: 0 !important;
+  transition: 0.2s !important;
+}
+
+.menu_item_navbar_home :hover,
+.menu_item_navbar_tft:hover {
+  opacity: 1 !important;
+  transition: 0.2s !important;
+}
+
+.deep-links-promo {
+  display: none !important;
+  opacity: 0 !important;
+}
+
+/* right side */
