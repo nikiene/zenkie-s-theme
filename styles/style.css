@@ -9,11 +9,72 @@
 
 /* Client */
 
+.rcp-fe-viewport-sidebar {
+  background-color: transparent !important;
+  width: 0 !important;
+}
+
+.rcp-fe-viewport-sidebar:hover {
+  width: 100% !important;
+  max-width: 221px !important;
+}
+
+/* removes support button on the top-right corner*/
 .app-controls-support {
   display: none !important;
 }
 
-.rcp-fe-lol-home-error {
+div .rcp-fe-lol-home {
+  background-color: transparent !important;
+  width: calc(100%) !important;
+}
+
+div .rcp-fe-lol-home:hover {
+  width: calc(100%) !important;
+}
+
+.rcp-fe-lol-home-sub-nav {
+  display: block !important;
+  opacity: 1 !important;
+  z-index: 100 !important;
+}
+
+/* Profile */
+
+/* makes the profile visible when hovering, otherwise its invisible */
+.identity-and-parties {
+  transition: 0.2s !important;
+  width: 0 !important;
+}
+
+.identity-and-parties:hover {
+  display: block !important;
+  transition: 0.2s !important;
+  width: 100% !important;
+  z-index: 100 !important;
+}
+
+/* makes the availability visible when hovering, otherwise its invisible */
+.availability-hitbox {
+  opacity: 0 !important;
+  transition: 0.2s !important;
+  width: 0 !important;
+}
+
+.availability-hitbox:hover {
+  opacity: 1 !important;
+  transition: 0.2s !important;
+  width: 100% !important;
+}
+
+/* makes the notifications button invisible */
+.notifications-button {
+  display: none !important;
+}
+
+/* removes the error message from the home screen */
+.rcp-fe-lol-home-error,
+.rcp-fe-lol-home-error-group {
   display: none !important;
 }
 
@@ -22,14 +83,16 @@
 .rcp-fe-lol-navigation {
   background-color: #000000 !important;
   border: none !important;
+  width: calc(100%) !important;
+}
+
+.rcp-fe-lol-navigation:hover {
+  background-color: #000000 !important;
+  border: none !important;
+  width: calc(100%) !important;
 }
 
 /* left side */
-.play-button-frame {
-  display: none !important;
-  opacity: 0 !important;
-}
-
 .navigation-status-ticker,
 .ticker-button,
 .has-incidents {
@@ -37,15 +100,47 @@
   opacity: 0 !important;
 }
 
+.rcp-fe-lol-navigation-app,
+.rcp-fe-lol-navigation,
+.main-nav-bar {
+  background-color: #000000 !important;
+  border: none !important;
+  width: calc(100%) !important;
+}
+
+.rcp-fe-lol-navigation-app:hover,
+.rcp-fe-lol-navigation:hover,
+.main-nav-bar:hover {
+  background-color: #000000 !important;
+  border: none !important;
+  width: calc(100%) !important;
+}
+
+.main-navigation-menu-item[active] {
+  display: block !important;
+  opacity: 1 !important;
+  pointer-events: none;
+}
+
+.main-navigation-menu-item:hover {
+  display: block !important;
+  opacity: 1 !important;
+  transition: 0.2s !important;
+  z-index: 100 !important;
+}
+
+.menu_item_navbar_home,
 .menu_item_navbar_tft {
   opacity: 0 !important;
   transition: 0.2s !important;
 }
 
-.menu_item_navbar_home :hover,
+.menu_item_navbar_home:hover,
 .menu_item_navbar_tft:hover {
+  display: block !important;
   opacity: 1 !important;
   transition: 0.2s !important;
+  z-index: 100 !important;
 }
 
 .deep-links-promo {
